@@ -50,13 +50,14 @@ std::string replace(std::string in, std::string older, std::string newer, bool a
 
 int main(int argc, char ** argv)
 {
-    if(argc < 3) return 0;
+    if(argc < 2) return 0;
     
     bool compiling = false;
     if (strncmp(argv[1], "-c", 2) == 0) compiling = true;
     
     if(compiling)
     {
+        if(argc < 3) return 0;
         for(int argument = 2; argument < argc; argument++)
         {
             std::ifstream infile(argv[argument]);
