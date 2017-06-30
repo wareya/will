@@ -5,3 +5,5 @@ enarc.cpp: packer for .arc files
 wsc.cpp: disassembler and assembler for .WSC files
 
 Make backups.
+
+![Screenshot](https://i.imgur.com/nAKj7tt.jpg "Screenshot")
